@@ -93,5 +93,6 @@ When the user requests a durable behavior change, record it here or in the relev
 ## Child DOX Index
 
 - [posts/AGENTS.md](posts/AGENTS.md) owns shared project requirements and the post index.
-- Root-owned: `.github/workflows/validate.yml` validates all projects; `docs/dox-LICENSE.txt` preserves upstream attribution.
-
+- Root-owned: `.github/workflows/validate.yml` validates all projects;
+  `.github/workflows/robin.yml` requests Robin reviews for pull requests and reads its three
+  GitHub Actions secrets; `docs/dox-LICENSE.txt` preserves upstream attribution.
