@@ -92,7 +92,11 @@ async function main() {
     { cwd: root, encoding: 'utf8', env: process.env },
   );
   assert.ifError(run.error);
-  assert.equal(run.status, 0, `Playwright must complete with expected flaky tests:\n${run.stderr}`);
+  assert.equal(
+    run.status,
+    0,
+    `Playwright must complete with expected flaky tests:\nSTDOUT:\n${run.stdout}\nSTDERR:\n${run.stderr}`,
+  );
 
   const result = JSON.parse(await readFile(path.join(root, 'test-results', 'results.json'), 'utf8'));
   assert.deepEqual(result.errors, [], 'No setup or global errors are expected');
