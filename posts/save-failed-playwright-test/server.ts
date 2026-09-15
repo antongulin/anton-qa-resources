@@ -1,4 +1,5 @@
 import { createServer } from 'node:http';
+import { basename } from 'node:path';
 
 let paymentRequestCount = 0;
 
@@ -74,7 +75,7 @@ export async function startServer(port = 4191) {
   return server;
 }
 
-if (process.argv[1]?.endsWith('/server.ts')) {
+if (basename(process.argv[1] ?? '') === 'server.ts') {
   await startServer();
   console.log('Fixture listening on http://127.0.0.1:4191');
 }
