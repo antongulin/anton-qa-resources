@@ -1,0 +1,19 @@
+{
+  "name": "save-failed-playwright-test",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "scripts": {
+    "serve": "node server.ts",
+    "test": "playwright test",
+    "verify": "node verify.mjs",
+    "show-report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "adm-zip": "0.6.1"
+  }
+}

@@ -3,6 +3,7 @@
 Runnable examples and reader resources for [anton.qa](https://www.anton.qa).
 
 - [Turn a browser task into a Playwright test](posts/browser-task-to-playwright-test/): record actions and verify saved state.
+- [Keep the first failed Playwright attempt](posts/save-failed-playwright-test/): compare retry and retained-failure traces with local routing and clock examples.
 
 Each project includes its own setup instructions and checks.
 See [CONTRIBUTING.md](CONTRIBUTING.md) to add resources for another article.

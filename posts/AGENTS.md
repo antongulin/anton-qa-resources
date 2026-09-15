@@ -26,4 +26,4 @@ Run each project's documented verification from a clean install. CI uses the sam
 ## Child DOX Index
 
 - [browser-task-to-playwright-test/AGENTS.md](browser-task-to-playwright-test/AGENTS.md): recording actions and checking saved state after reload.
-
+- [save-failed-playwright-test/AGENTS.md](save-failed-playwright-test/AGENTS.md): retaining retry and first-failure trace evidence with local-only companion checks.
