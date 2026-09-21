@@ -1,0 +1,17 @@
+{
+  "name": "test-dark-mode-reduced-motion",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "scripts": {
+    "serve": "node server.ts",
+    "test": "playwright test",
+    "verify": "node verify.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0"
+  }
+}
