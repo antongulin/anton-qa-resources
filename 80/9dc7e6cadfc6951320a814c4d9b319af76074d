@@ -1,0 +1,51 @@
+.github/workflows/validate.yml
+  s_be8ce420116d74::t_79bd387b103a9d 14
+README.md
+  s_be8ce420116d74::t_0b5a58d103f226 7
+posts/AGENTS.md
+  s_be8ce420116d74::t_a0a433484efd54 30
+posts/test-dark-mode-reduced-motion/AGENTS.md
+  s_be8ce420116d74::t_5d8c99e37ee713 1-34
+posts/test-dark-mode-reduced-motion/package-lock.json
+  s_833e818c8744d4::t_23aae49d35ea3c 1-63
+posts/test-dark-mode-reduced-motion/package.json
+  s_be8ce420116d74::t_046f64aef45e95 1-17
+posts/test-dark-mode-reduced-motion/playwright.config.ts
+  s_be8ce420116d74::t_8888e7320bb060 1-15
+posts/test-dark-mode-reduced-motion/server.ts
+  s_be8ce420116d74::t_0ab3bb36efa8fc 1-72
+posts/test-dark-mode-reduced-motion/tests/baseline.spec.ts
+  s_833e818c8744d4::t_d9a74bbbe5b3be 1-21
+posts/test-dark-mode-reduced-motion/tests/helpers.ts
+  s_833e818c8744d4::t_7017a17603dcfb 1-41
+posts/test-dark-mode-reduced-motion/tests/motion.spec.ts
+  s_833e818c8744d4::t_2f7c0804f03f2e 1-15
+posts/test-dark-mode-reduced-motion/tests/theme.spec.ts
+  s_833e818c8744d4::t_183356047ecaf8 1-26
+posts/test-dark-mode-reduced-motion/verify.mjs
+  s_833e818c8744d4::t_3d9674f87140db 1-71
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "809dc7e6cadfc6951320a814c4d9b319af76074d",
+  "prompts": {},
+  "sessions": {
+    "s_833e818c8744d4": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f39fec28affe1QEdCGOGUvHXjd",
+        "model": "deepseek-v4.1-flash"
+      },
+      "human_author": "Anton Gulin <anton@boostbusiness.ai>"
+    },
+    "s_be8ce420116d74": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0c5ca-c617-7583-b0d0-7a8c30275212",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "Anton Gulin <anton@boostbusiness.ai>"
+    }
+  }
+}
