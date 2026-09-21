@@ -50,13 +50,16 @@ APP_VARIANT=css-stuck npm test
 
 That run must exit with status 1 because the card stays light. `APP_VARIANT=motion-stuck npm test`
 must exit with status 1 because the transition stays at `2s`.
-On PowerShell, set `$env:APP_VARIANT="css-stuck"` before testing and remove it afterward.
+On PowerShell, set `$env:APP_VARIANT="css-stuck"`, then run `npm test`.
+For the motion variant, set `$env:APP_VARIANT="motion-stuck"`, then run `npm test`.
+After either check, run `Remove-Item Env:APP_VARIANT` before testing the corrected page again.
 
 ## What the example proves
 
 `page.emulateMedia` alone reports the preference but never proves a page honours it. Reading
-`getComputedStyle` proves the rendered result. The verifier also checks the failure message names
-the value actually rendered, so a broken fixture cannot pass for the wrong reason.
+`getComputedStyle` checks the applied CSS values; it does not sample screenshot pixels.
+The verifier also checks the failure message names the unexpected value,
+so a broken fixture cannot pass for the wrong reason.
 
 ## Limits
 
