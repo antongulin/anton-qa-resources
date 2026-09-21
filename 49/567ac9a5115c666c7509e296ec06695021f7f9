@@ -1,0 +1,19 @@
+posts/test-dark-mode-reduced-motion/README.md
+  s_be8ce420116d74::t_772660d6650e9e 53-55,60-62
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "49567ac9a5115c666c7509e296ec06695021f7f9",
+  "prompts": {},
+  "sessions": {
+    "s_be8ce420116d74": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0c5ca-c617-7583-b0d0-7a8c30275212",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "Anton Gulin <anton@boostbusiness.ai>"
+    }
+  }
+}
