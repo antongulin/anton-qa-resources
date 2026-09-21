@@ -27,3 +27,4 @@ Run each project's documented verification from a clean install. CI uses the sam
 
 - [browser-task-to-playwright-test/AGENTS.md](browser-task-to-playwright-test/AGENTS.md): recording actions and checking saved state after reload.
 - [save-failed-playwright-test/AGENTS.md](save-failed-playwright-test/AGENTS.md): retaining retry and first-failure trace evidence with local-only companion checks.
+- [test-dark-mode-reduced-motion/AGENTS.md](test-dark-mode-reduced-motion/AGENTS.md): asserting rendered dark-scheme and reduced-motion styles instead of media-query flags.
