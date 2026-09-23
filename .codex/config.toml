@@ -1,0 +1,8 @@
+# Project-local MCP servers for Codex CLI.
+# CodeGraph provides local code-intelligence over this repository's TypeScript
+# sources; telemetry is disabled. Index state lives in ignored .codegraph/.
+
+[mcp_servers.codegraph]
+command = "codegraph"
+args = ["serve", "--mcp"]
+env = { CODEGRAPH_TELEMETRY = "0" }

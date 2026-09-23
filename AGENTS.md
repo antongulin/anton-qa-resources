@@ -9,6 +9,25 @@ Public reader materials for anton.qa articles. Read [CONTRIBUTING.md](CONTRIBUTI
 - Use GitHub-hosted runners for this public repository. No private infrastructure is required.
 - Pin tutorial dependencies for reproducible article behavior; review pins when updating the article or dependency support changes.
 
+## CodeGraph
+
+Local code intelligence for the TypeScript and JavaScript sources under `posts/`. It indexes code
+symbols only — Markdown prose, README files, and lockfiles are not indexed as symbols.
+
+- Provenance: `codegraph` is a globally installed user tool, not a repository dependency. Nothing
+  in this repo installs, vendors, or builds it. Confirm it is on `PATH` (`codegraph --version`)
+  before relying on it; a missing binary is an environment issue, not a repo defect.
+- Build or refresh the index from the repository root:
+  `CODEGRAPH_TELEMETRY=0 codegraph init`, or `CODEGRAPH_TELEMETRY=0 codegraph sync` after edits.
+- Index and daemon state live in `.codegraph/`, which is git-ignored. Never commit it.
+- Project-local MCP wiring is committed for Codex (`.codex/config.toml`), Claude-compatible clients
+  (`.mcp.json`), Cursor (`.cursor/mcp.json`), VS Code (`.vscode/mcp.json`), and OpenCode
+  (`opencode.jsonc`). Each entry runs `codegraph serve --mcp` with `CODEGRAPH_TELEMETRY=0`.
+- Prefer CodeGraph queries (`codegraph query`, `codegraph explore`, `codegraph node`) when tracing
+  symbols in the `posts/` projects; fall back to ordinary search for Markdown and prose.
+- Committing these configs wires the server, but each client still needs a one-time local approval
+  of the project MCP server before its tools appear.
+
 <!-- DOX source: agent0ai/dox@765ae4ac02cc884eefcd41a3d0f71941721adb89; MIT license: docs/dox-LICENSE.txt -->
 # DOX framework
 
@@ -95,4 +114,6 @@ When the user requests a durable behavior change, record it here or in the relev
 - [posts/AGENTS.md](posts/AGENTS.md) owns shared project requirements and the post index.
 - Root-owned: `.github/workflows/validate.yml` validates all projects;
   `.github/workflows/robin.yml` requests Robin reviews for pull requests and reads its three
-  GitHub Actions secrets; `docs/dox-LICENSE.txt` preserves upstream attribution.
+  GitHub Actions secrets; `docs/dox-LICENSE.txt` preserves upstream attribution;
+  `.codex/config.toml`, `.mcp.json`, `.cursor/mcp.json`, `.vscode/mcp.json`, and `opencode.jsonc`
+  declare the project-local CodeGraph MCP server; `.gitignore` excludes local `.codegraph/` state.

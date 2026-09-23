@@ -6,3 +6,6 @@
 **/.env
 **/.env.*
 .DS_Store
+
+# CodeGraph index and daemon state — local to each machine, never committed.
+.codegraph/
