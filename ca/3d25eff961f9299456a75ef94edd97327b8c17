@@ -1,0 +1,26 @@
+.codex/config.toml
+  h_189d15dd58c223 1-8
+.cursor/mcp.json
+  h_189d15dd58c223 1-12
+.gitignore
+  h_189d15dd58c223 9-11
+.mcp.json
+  h_189d15dd58c223 1-12
+.vscode/mcp.json
+  h_189d15dd58c223 1-12
+AGENTS.md
+  h_189d15dd58c223 12-30,117-119
+opencode.jsonc
+  h_189d15dd58c223 1-13
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "ca3d25eff961f9299456a75ef94edd97327b8c17",
+  "prompts": {},
+  "humans": {
+    "h_189d15dd58c223": {
+      "author": "Anton Gulin <anton@boostbusiness.ai>"
+    }
+  }
+}
