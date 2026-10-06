@@ -11,7 +11,7 @@ jobs:
     timeout-minutes: 10
     strategy:
       matrix:
-        project: [browser-task-to-playwright-test, save-failed-playwright-test, test-dark-mode-reduced-motion]
+        project: [browser-task-to-playwright-test, save-failed-playwright-test, test-dark-mode-reduced-motion, first-agent-task]
     defaults:
       run:
         working-directory: posts/${{ matrix.project }}
@@ -24,4 +24,5 @@ jobs:
           cache-dependency-path: posts/${{ matrix.project }}/package-lock.json
       - run: npm ci
       - run: npx playwright install --with-deps chromium
+        if: matrix.project != 'first-agent-task'
       - run: npm run verify
