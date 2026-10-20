@@ -16,6 +16,6 @@ Example code uses the MIT license. Agent Zero DOX has separate attribution in `d
 
 Robin reviews newly opened, reopened, and ready-for-review pull requests. Repository maintainers
 can request another review by commenting `/robin` as the first line of a pull-request comment.
-The workflow runs on GitHub-hosted runners and reads the `LLM_API_KEY`, `LLM_BASE_URL`, and
+The review workflow runs on Ubicloud and reads the `LLM_API_KEY`, `LLM_BASE_URL`, and
 `LLM_MODEL` repository secrets. Configure those secrets in GitHub Actions settings; never add their
 values to this repository.
