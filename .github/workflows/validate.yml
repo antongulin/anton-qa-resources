@@ -11,7 +11,7 @@ jobs:
     timeout-minutes: 10
     strategy:
       matrix:
-        project: [browser-task-to-playwright-test, save-failed-playwright-test, test-dark-mode-reduced-motion, first-agent-task]
+        project: [browser-task-to-playwright-test, save-failed-playwright-test, test-dark-mode-reduced-motion, first-agent-task, playwright-within-table-cells]
     defaults:
       run:
         working-directory: posts/${{ matrix.project }}
