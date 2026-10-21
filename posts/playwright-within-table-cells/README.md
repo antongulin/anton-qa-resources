@@ -2,9 +2,8 @@
 
 Use Playwright 1.64's `within()` to resolve `nth(2)` inside each parent row.
 
-Planned article for October 21, 2026:
+Read the article:
 [Playwright within table cells](https://www.anton.qa/blog/posts/playwright-within-table-cells).
-The article link may not be live yet.
 
 ## Run it
 
