@@ -7,11 +7,23 @@ permissions:
   contents: read
 jobs:
   validate:
-    runs-on: ubuntu-latest
+    runs-on: ubicloud-standard-2
     timeout-minutes: 10
     strategy:
       matrix:
-        project: [browser-task-to-playwright-test, save-failed-playwright-test, test-dark-mode-reduced-motion, first-agent-task, playwright-within-table-cells]
+        include:
+          - project: browser-task-to-playwright-test
+            node: '24'
+          - project: save-failed-playwright-test
+            node: '24'
+          - project: test-dark-mode-reduced-motion
+            node: '24'
+          - project: first-agent-task
+            node: '24'
+          - project: playwright-within-table-cells
+            node: '24'
+          - project: parallel-playwright-account-data
+            node: '26.13.0'
     defaults:
       run:
         working-directory: posts/${{ matrix.project }}
@@ -19,7 +31,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: '24'
+          node-version: ${{ matrix.node }}
           cache: npm
           cache-dependency-path: posts/${{ matrix.project }}/package-lock.json
       - run: npm ci

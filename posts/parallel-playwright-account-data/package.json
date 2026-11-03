@@ -1,0 +1,13 @@
+{
+  "name": "parallel-playwright-account-data",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": "26.13.0" },
+  "scripts": {
+    "demo": "node verify.mjs --scenario",
+    "test:guards": "node --test tests/verifier.test.mjs",
+    "verify": "npm run test:guards && node verify.mjs"
+  },
+  "devDependencies": { "@playwright/test": "1.64.1" }
+}
