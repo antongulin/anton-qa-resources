@@ -6,7 +6,8 @@ Public reader materials for anton.qa articles. Read [CONTRIBUTING.md](CONTRIBUTI
 - Preserve public folder links. Do not rename a published slug without a compatibility path.
 - Publish curated synthetic examples only. Never copy private repository history, plans, receipts, credentials, or personal data.
 - Executable changes require a `codex/` branch, pull request, review, and successful checks before merge.
-- Use GitHub-hosted runners for this public repository’s general workflows. Robin’s review workflow is the explicit Ubicloud exception. No private infrastructure is required.
+- Use standard Ubicloud runners (`ubicloud-standard-2`) for all GitHub Actions jobs, including validation and Robin. Do not use Fast or fall back to GitHub-hosted runners.
+- Squash small, cohesive pull requests after required checks and review pass; the repository permits squash merging.
 - Pin tutorial dependencies for reproducible article behavior; review pins when updating the article or dependency support changes.
 
 ## CodeGraph

@@ -30,3 +30,4 @@ Run each project's documented verification from a clean install. CI uses the sam
 - [test-dark-mode-reduced-motion/AGENTS.md](test-dark-mode-reduced-motion/AGENTS.md): asserting rendered dark-scheme and reduced-motion styles instead of media-query flags.
 - [first-agent-task/AGENTS.md](first-agent-task/AGENTS.md): checking an intentional uppercase PDF failure with dependency-free Node tests.
 - [playwright-within-table-cells/AGENTS.md](playwright-within-table-cells/AGENTS.md): selecting one third cell per row with `within()`, compared with global indexing.
+- [parallel-playwright-account-data/AGENTS.md](parallel-playwright-account-data/AGENTS.md): showing shared-account interference through real localhost saves, with separate browser contexts and strict expected-failure verification.
