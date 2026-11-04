@@ -3,8 +3,7 @@
 Two tests pass alone. Run them in parallel against one server account, and the reader sees the
 writer's saved change. Give them separate accounts, and both pass with the same test bodies.
 
-Planned canonical article: [Parallel Playwright account data](https://www.anton.qa/blog/posts/parallel-playwright-account-data).
-The article may not be published yet.
+Canonical article: [Two Playwright tests, one account. Keep their data separate.](https://www.anton.qa/blog/posts/parallel-playwright-account-data).
 
 ## Run it
 

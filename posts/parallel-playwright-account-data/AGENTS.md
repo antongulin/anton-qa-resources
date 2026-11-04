@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Runnable synthetic example for the planned `parallel-playwright-account-data` article.
+Runnable synthetic example for the published `parallel-playwright-account-data` article.
 
 ## Ownership
 
@@ -25,7 +25,7 @@ report classifier, lifecycle guards, dependency lockfile, and reader instruction
 
 ## Work Guidance
 
-Keep the canonical article link labeled planned until publication. Explain that this fixture
+Keep the canonical article link aligned with the published article. Explain that this fixture
 demonstrates a chosen interleaving, not a measured flake rate or a production account allocator.
 Use synthetic localhost data only. No real authentication, email delivery, or external services.
 
